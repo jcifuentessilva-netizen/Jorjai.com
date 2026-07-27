@@ -3,15 +3,18 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
+const links = [
+  { href: "/sobre-mi", label: "Sobre Mí" },
+  { href: "/servicios", label: "Servicios" },
+  { href: "/proyectos", label: "Proyectos" },
+  { href: "/contacto", label: "Contacto" },
+];
+
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [menuOpen]);
 
@@ -22,8 +25,24 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <Link href="/" className="text-2xl font-extrabold text-gradient">
             Jordan Digitalizaciones
           </Link>
+
+          {/* DESKTOP NAV */}
+          <ul className="hidden md:flex items-center gap-1">
+            {links.map(({ href, label }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className="block px-4 py-2 rounded-lg text-text-warm hover:text-champagne hover:bg-kinpaku/10 transition-all font-medium text-sm"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* MOBILE HAMBURGER */}
           <button
-            className="md:hidden text-white focus:outline-none relative z-50 p-2"
+            className="md:hidden text-white focus:outline-none p-2 z-50"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
           >
@@ -35,27 +54,28 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               )}
             </svg>
           </button>
+
+          {/* MOBILE OVERLAY */}
           {menuOpen && (
             <div className="fixed inset-0 bg-black/60 z-40 md:hidden" onClick={() => setMenuOpen(false)} />
           )}
-          <ul className={`fixed top-0 right-0 h-dvh w-72 bg-lacquer-raised px-6 pb-6 pt-20 transform transition-transform duration-300 z-50 md:relative md:flex md:h-auto md:w-auto md:bg-transparent md:p-0 md:transform-none md:items-center md:gap-1 ${menuOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'} flex flex-col gap-1 overflow-y-auto`}>
-            {[
-              { href: "/sobre-mi", label: "Sobre Mí" },
-              { href: "/servicios", label: "Servicios" },
-              { href: "/proyectos", label: "Proyectos" },
-              { href: "/contacto", label: "Contacto" },
-            ].map(({ href, label }) => (
-              <li key={href}>
-                <Link
-                  href={href}
-                  onClick={() => setMenuOpen(false)}
-                  className="block px-4 py-3 rounded-lg text-text-warm hover:text-champagne hover:bg-kinpaku/10 transition-all font-medium"
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
-            <li className="md:hidden mt-3 border-t border-gold-hairline pt-3">
+
+          {/* MOBILE DRAWER */}
+          <div className={`fixed top-0 right-0 h-dvh w-72 bg-lacquer-raised z-50 md:hidden transform transition-transform duration-300 ${menuOpen ? 'translate-x-0' : 'translate-x-full'} flex flex-col pt-20 pb-6 px-6 overflow-y-auto`}>
+            <ul className="flex flex-col gap-1">
+              {links.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    onClick={() => setMenuOpen(false)}
+                    className="block px-4 py-3 rounded-lg text-text-warm hover:text-champagne hover:bg-kinpaku/10 transition-all font-medium"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-auto border-t border-gold-hairline pt-4">
               <a
                 href="https://wa.me/56930973700"
                 target="_blank"
@@ -65,23 +85,23 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <FaWhatsapp size={18} />
                 WhatsApp
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </nav>
       </header>
+
       <main className="pt-16 min-h-screen pb-16">
         {children}
       </main>
+
       <footer className="border-t border-gold-hairline bg-lacquer">
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-text-muted">
             &copy; {new Date().getFullYear()} Jordan Digitalizaciones. Todos los derechos reservados.
           </p>
-          <div className="flex items-center gap-4">
-            <a href="https://wa.me/56930973700" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-kinpaku transition-colors">
-              <FaWhatsapp size={20} />
-            </a>
-          </div>
+          <a href="https://wa.me/56930973700" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-kinpaku transition-colors">
+            <FaWhatsapp size={20} />
+          </a>
         </div>
       </footer>
     </div>
