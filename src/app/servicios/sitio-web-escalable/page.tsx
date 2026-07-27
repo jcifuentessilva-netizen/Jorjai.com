@@ -172,19 +172,19 @@ export default function SitioWebEscalable() {
   ];
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
-      <h1 className="text-5xl font-extrabold text-white mb-4 text-center">Sitio Web Escalable</h1>
-      <p className="text-lg text-gray-300 text-center mb-10">
+    <div className="py-12 px-4 sm:px-6 lg:px-8 bg-lacquer text-champagne">
+      <h1 className="text-3xl md:text-5xl font-extrabold text-champagne mb-4 text-center font-display">Sitio Web Escalable</h1>
+      <p className="text-lg text-text-warm text-center mb-10">
         Soluciones robustas para la construcción y mantenimiento de un sitio web completo con múltiples secciones y gestor de contenido.
       </p>
 
       <div className="max-w-6xl mx-auto">
         {/* Nivel Básico */}
         <section id="nivel-basico" className="mb-12">
-          <h2 className="text-3xl font-bold text-blue-400 mb-6 text-center">
+          <h2 className="text-3xl font-bold text-kinpaku mb-6 text-center font-display">
             🥇 NIVEL BÁSICO: Web Fundacional
           </h2>
-          <p className="text-center text-gray-300 mb-8">
+          <p className="text-center text-text-warm mb-8">
             Ofrecer un sitio web profesional y funcional con las secciones clave para establecer presencia online.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -196,10 +196,10 @@ export default function SitioWebEscalable() {
 
         {/* Nivel Pro */}
         <section id="nivel-pro" className="mb-12">
-          <h2 className="text-3xl font-bold text-green-400 mb-6 text-center">
+          <h2 className="text-3xl font-bold text-verdigris mb-6 text-center font-display">
             🥈 NIVEL PRO: Web de Crecimiento y Marca
           </h2>
-          <p className="text-center text-gray-300 mb-8">
+          <p className="text-center text-text-warm mb-8">
             Escalar la imagen de marca con diseño avanzado y preparar el sitio para la captura de leads a través de sus múltiples páginas.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -211,10 +211,10 @@ export default function SitioWebEscalable() {
 
         {/* Nivel Premium */}
         <section id="nivel-premium" className="mb-12">
-          <h2 className="text-3xl font-bold text-purple-400 mb-6 text-center">
+          <h2 className="text-3xl font-bold text-kinpaku mb-6 text-center font-display">
             🥉 NIVEL PREMIUM: Web de Alto Rendimiento y Analítica
           </h2>
-          <p className="text-center text-gray-300 mb-8">
+          <p className="text-center text-text-warm mb-8">
             Optimizar el sitio completo para campañas de publicidad, garantizar la máxima velocidad en todas las subpáginas (WPO) y tener analítica avanzada instalada para la toma de decisiones.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -226,10 +226,10 @@ export default function SitioWebEscalable() {
 
         {/* Nivel VIP */}
         <section id="nivel-vip" className="mb-12">
-          <h2 className="text-3xl font-bold text-yellow-400 mb-6 text-center">
+          <h2 className="text-3xl font-bold text-kinpaku mb-6 text-center font-display">
             👑 NIVEL VIP: VIP EXPERIENCE (Web con Infraestructura Dedicada)
           </h2>
-          <p className="text-center text-gray-300 mb-8">
+          <p className="text-center text-text-warm mb-8">
             Máxima autoridad digital. Se entrega la capacidad de un servidor privado virtual (VPS) para alojar sistemas complejos (CRM/ERP) que interactúan con el sitio web a gran escala.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -241,32 +241,32 @@ export default function SitioWebEscalable() {
         
         {/* Términos de Servicio y Tarifas de Exportación */}
         <section id="terminos-y-tarifas" className="mt-16">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">Términos Clave y Tarifas de Exportación</h2>
-          <div className="bg-gray-800 rounded-lg shadow-xl p-8 mb-8">
-            <h3 className="text-2xl font-bold text-yellow-400 mb-4">
+          <h2 className="text-3xl font-bold text-champagne mb-8 text-center font-display">Términos Clave y Tarifas de Exportación</h2>
+          <div className="bg-lacquer-raised rounded-lg border border-gold-hairline p-8 mb-8">
+            <h3 className="text-2xl font-bold text-kinpaku mb-4">
               📦 Tarifa de Exportación de Activos Digitales (Sitio Web Escalable)
             </h3>
-            <p className="text-gray-300 mb-4">
+            <p className="text-text-warm mb-4">
               Esta tarifa cubre la descarga, organización, documentación y empaquetado de todos los archivos del sitio, el contenido de texto, las imágenes optimizadas y todas las configuraciones técnicas asociadas al sitio web de múltiples páginas.
             </p>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <ul className="list-disc list-inside text-text-warm space-y-2">
               <li>
-                <strong className="text-white">NIVEL BÁSICO:</strong> Archivos del Sitio Web de 3-5 páginas, archivos básicos de template, Tipografía y Paleta de Colores. <span className="font-bold text-blue-400">$150.000 USD/CLP</span>
+                <strong className="text-champagne">NIVEL BÁSICO:</strong> Archivos del Sitio Web de 3-5 páginas, archivos básicos de template, Tipografía y Paleta de Colores. <span className="font-bold text-kinpaku">$150.000 USD/CLP</span>
               </li>
               <li>
-                <strong className="text-white">NIVEL PRO:</strong> Todo lo Básico + Archivos Editables de Logotipo + Copia de seguridad de la base de datos de los leads + Configuración de Blog. <span className="font-bold text-green-400">$300.000 USD/CLP</span>
+                <strong className="text-champagne">NIVEL PRO:</strong> Todo lo Básico + Archivos Editables de Logotipo + Copia de seguridad de la base de datos de los leads + Configuración de Blog. <span className="font-bold text-verdigris">$300.000 USD/CLP</span>
               </li>
               <li>
-                <strong className="text-white">NIVEL PREMIUM:</strong> Todo lo PRO + Documentación de configuraciones avanzadas de WPO y Analítica + Archivos de Branding Completo y multimedia asociada. <span className="font-bold text-purple-400">$500.000 USD/CLP</span>
+                <strong className="text-champagne">NIVEL PREMIUM:</strong> Todo lo PRO + Documentación de configuraciones avanzadas de WPO y Analítica + Archivos de Branding Completo y multimedia asociada. <span className="font-bold text-kinpaku">$500.000 USD/CLP</span>
               </li>
               <li>
-                <strong className="text-white">VIP EXPERIENCE:</strong> Todo lo PREMIUM + Backup Completo del VPS (archivos, base de datos de Odoo/n8n/Chatwoot), junto con documentación detallada de la infraestructura. <span className="font-bold text-yellow-400">$900.000 USD/CLP</span>
+                <strong className="text-champagne">VIP EXPERIENCE:</strong> Todo lo PREMIUM + Backup Completo del VPS (archivos, base de datos de Odoo/n8n/Chatwoot), junto con documentación detallada de la infraestructura. <span className="font-bold text-kinpaku">$900.000 USD/CLP</span>
               </li>
             </ul>
           </div>
-          <div className="bg-gray-800 rounded-lg shadow-xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-4">🚨 Término Clave de la Salida</h3>
-            <p className="text-gray-300 italic">
+          <div className="bg-lacquer-raised rounded-lg border border-gold-hairline p-8">
+            <h3 className="text-2xl font-bold text-champagne mb-4">🚨 Término Clave de la Salida</h3>
+            <p className="text-text-warm italic">
               "Debido a la complejidad y la gestión de bases de datos de un Sitio Web Escalable, la Tarifa de Exportación varía según el nivel. Esta tarifa es obligatoria si el cliente desea llevarse sus activos digitales y la propiedad del código/configuración técnica al cancelar su suscripción (Mensual o Anual)."
             </p>
           </div>

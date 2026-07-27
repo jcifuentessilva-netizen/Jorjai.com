@@ -56,19 +56,19 @@ export default function WebInmersiva() {
   ];
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
-      <h1 className="text-5xl font-extrabold text-white mb-4 text-center">Ingeniería UX/UI y Web Inmersiva</h1>
-      <p className="text-lg text-gray-300 text-center mb-10 max-w-4xl mx-auto">
+    <div className="py-12 px-4 sm:px-6 lg:px-8 bg-lacquer text-champagne">
+      <h1 className="text-3xl md:text-5xl font-extrabold text-champagne mb-4 text-center font-display">Ingeniería UX/UI y Web Inmersiva</h1>
+      <p className="text-lg text-text-warm text-center mb-10 max-w-4xl mx-auto">
         Transforme su presencia digital en una experiencia memorable y de alto impacto. Desarrollo web personalizado con efectos inmersivos y diseño basado en neuromarketing.
       </p>
 
       <div className="max-w-6xl mx-auto">
         {/* Nivel 1 */}
         <section id="nivel-1" className="mb-16">
-          <h2 className="text-3xl font-bold text-blue-400 mb-2 text-center">
-            Nivel 1: Diseño Psicológico y Microinteracciones
+          <h2 className="text-3xl font-bold text-kinpaku mb-2 text-center font-display">
+            Nivel 1: Neuromarketing y Microinteracciones
           </h2>
-          <p className="text-center text-gray-400 mb-8">
+          <p className="text-center text-text-muted mb-8">
             Optimizar la web existente con principios de neuromarketing y pequeños toques de experiencia.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -80,10 +80,10 @@ export default function WebInmersiva() {
 
         {/* Nivel 2 */}
         <section id="nivel-2" className="mb-16">
-          <h2 className="text-3xl font-bold text-green-400 mb-2 text-center">
+          <h2 className="text-3xl font-bold text-verdigris mb-2 text-center font-display">
             Nivel 2: Desarrollo de Scroll Inmersivo
           </h2>
-          <p className="text-center text-gray-400 mb-8">
+          <p className="text-center text-text-muted mb-8">
             Implementar efectos de scroll avanzados para narrar una historia de marca de forma cinemática y memorable.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -95,10 +95,10 @@ export default function WebInmersiva() {
 
         {/* Nivel 3 */}
         <section id="nivel-3" className="mb-16">
-          <h2 className="text-3xl font-bold text-purple-400 mb-2 text-center">
+          <h2 className="text-3xl font-bold text-kinpaku mb-2 text-center font-display">
             Nivel 3: Experiencia 3D y Realidad Aumentada (AR)
           </h2>
-          <p className="text-center text-gray-400 mb-8">
+          <p className="text-center text-text-muted mb-8">
             Integrar objetos 3D interactivos y tecnología inmersiva para diferenciar la marca radicalmente.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

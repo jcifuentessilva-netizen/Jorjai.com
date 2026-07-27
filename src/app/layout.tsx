@@ -4,8 +4,8 @@ import Layout from "@/components/Layout";
 import WhatsAppButton from "@/components/WhatsAppButton"; // Import the new component
 
 export const metadata: Metadata = {
-  title: "Jorjai Digitalizaciones - Soluciones Digitales Profesionales",
-  description: "Jorjai Digitalizaciones - Landing Pages, Sitios Web, E-Commerce, UX/UI y Automatización para PYMEs",
+  title: "Jordan Digitalizaciones - Super Alpha Market",
+  description: "Jordan Digitalizaciones - Landing Pages, Sitios Web, E-Commerce, UX/UI y Automatización para PYMEs",
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body suppressHydrationWarning={true}>
+      <body suppressHydrationWarning={true} className="font-body">
         <Layout>
           {children}
         </Layout>

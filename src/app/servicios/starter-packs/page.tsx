@@ -170,16 +170,16 @@ export default function StarterPacks() {
   ];
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
-      <h1 className="text-5xl font-extrabold text-white mb-4 text-center">Emprendedor Digital Starter Packs</h1>
-      <p className="text-lg text-gray-300 text-center mb-10 max-w-4xl mx-auto">
+    <div className="py-12 px-4 sm:px-6 lg:px-8 bg-lacquer text-champagne">
+      <h1 className="text-3xl md:text-5xl font-extrabold text-champagne mb-4 text-center font-display">Emprendedor Digital Starter Packs</h1>
+      <p className="text-lg text-text-warm text-center mb-10 max-w-4xl mx-auto">
         Planes de suscripción y pago único diseñados para lanzar y hacer crecer tu negocio digital de manera rápida y profesional.
       </p>
 
       <div className="max-w-6xl mx-auto">
         {/* Nivel Básico */}
         <section id="nivel-basico" className="mb-12">
-          <h2 className="text-3xl font-bold text-blue-400 mb-6 text-center">
+          <h2 className="text-3xl font-bold text-kinpaku mb-6 text-center font-display">
             🥇 NIVEL BÁSICO: Emprendedor Digital Starter Pack
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -191,7 +191,7 @@ export default function StarterPacks() {
 
         {/* Nivel Pro */}
         <section id="nivel-pro" className="mb-12">
-          <h2 className="text-3xl font-bold text-green-400 mb-6 text-center">
+          <h2 className="text-3xl font-bold text-verdigris mb-6 text-center font-display">
             🥈 NIVEL PRO: Plan Profesional
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -203,7 +203,7 @@ export default function StarterPacks() {
 
         {/* Nivel Premium */}
         <section id="nivel-premium" className="mb-12">
-          <h2 className="text-3xl font-bold text-purple-400 mb-6 text-center">
+          <h2 className="text-3xl font-bold text-kinpaku mb-6 text-center font-display">
             🥉 NIVEL PREMIUM: Alto Rendimiento y Automatización
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -215,7 +215,7 @@ export default function StarterPacks() {
 
         {/* Nivel VIP */}
         <section id="nivel-vip" className="mb-12">
-          <h2 className="text-3xl font-bold text-yellow-400 mb-6 text-center">
+          <h2 className="text-3xl font-bold text-kinpaku mb-6 text-center font-display">
             👑 NIVEL VIP: VIP EXPERIENCE (Infraestructura Dedicada)
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -227,74 +227,74 @@ export default function StarterPacks() {
 
         {/* Términos de Servicio y Tarifas de Exportación */}
         <section id="terminos-y-tarifas" className="mt-16">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">Términos Clave y Tarifas de Exportación (Starter Packs)</h2>
-          <div className="bg-gray-800 rounded-lg shadow-xl p-8 mb-8">
-            <h3 className="text-2xl font-bold text-blue-400 mb-4">1. Dominio y Propiedad</h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
+          <h2 className="text-3xl font-bold text-champagne mb-8 text-center font-display">Términos Clave y Tarifas de Exportación (Starter Packs)</h2>
+          <div className="bg-lacquer-raised rounded-lg border border-gold-hairline p-8 mb-8">
+            <h3 className="text-2xl font-bold text-kinpaku mb-4">1. Dominio y Propiedad</h3>
+            <ul className="list-disc list-inside text-text-warm space-y-2">
               <li>
-                <strong className="text-white">Pago Único (Todos los niveles):</strong> Dominio no incluido. El cliente debe comprarlo y gestionarlo. La responsabilidad total del dominio (renovación y costes) recae en el cliente.
+                <strong className="text-champagne">Pago Único (Todos los niveles):</strong> Dominio no incluido. El cliente debe comprarlo y gestionarlo. La responsabilidad total del dominio (renovación y costes) recae en el cliente.
               </li>
               <li>
-                <strong className="text-white">Suscripciones (Básico, Pro, Premium, VIP):</strong> Dominio GRATIS por el Primer Año. El dominio se compra a nombre del cliente. Al final del primer año, la renovación anual es responsabilidad del cliente y tiene un costo estándar de mercado.
+                <strong className="text-champagne">Suscripciones (Básico, Pro, Premium, VIP):</strong> Dominio GRATIS por el Primer Año. El dominio se compra a nombre del cliente. Al final del primer año, la renovación anual es responsabilidad del cliente y tiene un costo estándar de mercado.
               </li>
               <li>
-                <strong className="text-white">Transferencia de Propiedad:</strong> El cliente es el titular registral del dominio y de la landing page. Si el cliente decide dejar la suscripción, puede llevarse su dominio y los archivos de la web (se aplica una tarifa de exportación y empaquetado de archivos).
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-gray-800 rounded-lg shadow-xl p-8 mb-8">
-            <h3 className="text-2xl font-bold text-green-400 mb-4">2. Mantenimiento y Soporte</h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>
-                <strong className="text-white">BÁSICO ($39/mes):</strong> Mantenimiento Básico (Monitoreo 24/7, Manejo de Errores y Actualizaciones de herramientas). No incluye soporte para cambios de contenido o diseño (solo técnicos).
-              </li>
-              <li>
-                <strong className="text-white">PRO ($69/mes):</strong> Todo lo anterior + Reporte de Leads Mensual. Incluye consultas limitadas sobre el rendimiento de la captación de leads.
-              </li>
-              <li>
-                <strong className="text-white">PREMIUM ($99/mes):</strong> Mantenimiento Avanzado (WPO, Analítica y Pixel de Meta). El mantenimiento asegura la funcionalidad de las herramientas avanzadas y la velocidad de carga.
-              </li>
-              <li>
-                <strong className="text-white">VIP EXPERIENCE ($199/mes):</strong> Mantenimiento y Soporte DEDICADO para el VPS y las herramientas (Odoo, n8n, etc.). Soporte Prioritario 24h. Se enfoca en garantizar el uptime y la correcta ejecución de las automatizaciones críticas.
+                <strong className="text-champagne">Transferencia de Propiedad:</strong> El cliente es el titular registral del dominio y de la landing page. Si el cliente decide dejar la suscripción, puede llevarse su dominio y los archivos de la web (se aplica una tarifa de exportación y empaquetado de archivos).
               </li>
             </ul>
           </div>
 
-          <div className="bg-gray-800 rounded-lg shadow-xl p-8 mb-8">
-            <h3 className="text-2xl font-bold text-purple-400 mb-4">3. Cancelación de Suscripciones</h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
+          <div className="bg-lacquer-raised rounded-lg border border-gold-hairline p-8 mb-8">
+            <h3 className="text-2xl font-bold text-verdigris mb-4">2. Mantenimiento y Soporte</h3>
+            <ul className="list-disc list-inside text-text-warm space-y-2">
               <li>
-                <strong className="text-white">Mensual (Todos los niveles):</strong> Flexibilidad Total. Cancelación en cualquier momento sin penalizaciones. El servicio se mantiene activo hasta el final del mes ya pagado. No se realizan reembolsos por pagos parciales.
+                <strong className="text-champagne">BÁSICO ($39/mes):</strong> Mantenimiento Básico (Monitoreo 24/7, Manejo de Errores y Actualizaciones de herramientas). No incluye soporte para cambios de contenido o diseño (solo técnicos).
               </li>
               <li>
-                <strong className="text-white">Anual (Todos los niveles):</strong> Pago No Reembolsable. El pago anual cubre el servicio por 12 meses. No hay reembolso parcial por meses no utilizados. El servicio se mantiene activo hasta el final del período de 12 meses pagado.
+                <strong className="text-champagne">PRO ($69/mes):</strong> Todo lo anterior + Reporte de Leads Mensual. Incluye consultas limitadas sobre el rendimiento de la captación de leads.
               </li>
               <li>
-                <strong className="text-white">Retención de Activos:</strong> Al cancelar, el cliente pierde el acceso al dominio y al alojamiento (hosting) provisto. Si el cliente desea conservar los archivos del sitio web y/o su configuración, se aplicará una tarifa única de exportación.
+                <strong className="text-champagne">PREMIUM ($99/mes):</strong> Mantenimiento Avanzado (WPO, Analítica y Pixel de Meta). El mantenimiento asegura la funcionalidad de las herramientas avanzadas y la velocidad de carga.
+              </li>
+              <li>
+                <strong className="text-champagne">VIP EXPERIENCE ($199/mes):</strong> Mantenimiento y Soporte DEDICADO para el VPS y las herramientas (Odoo, n8n, etc.). Soporte Prioritario 24h. Se enfoca en garantizar el uptime y la correcta ejecución de las automatizaciones críticas.
               </li>
             </ul>
           </div>
 
-          <div className="bg-gray-800 rounded-lg shadow-xl p-8 mb-8">
-            <h3 className="text-2xl font-bold text-yellow-400 mb-4">
+          <div className="bg-lacquer-raised rounded-lg border border-gold-hairline p-8 mb-8">
+            <h3 className="text-2xl font-bold text-kinpaku mb-4">3. Cancelación de Suscripciones</h3>
+            <ul className="list-disc list-inside text-text-warm space-y-2">
+              <li>
+                <strong className="text-champagne">Mensual (Todos los niveles):</strong> Flexibilidad Total. Cancelación en cualquier momento sin penalizaciones. El servicio se mantiene activo hasta el final del mes ya pagado. No se realizan reembolsos por pagos parciales.
+              </li>
+              <li>
+                <strong className="text-champagne">Anual (Todos los niveles):</strong> Pago No Reembolsable. El pago anual cubre el servicio por 12 meses. No hay reembolso parcial por meses no utilizados. El servicio se mantiene activo hasta el final del período de 12 meses pagado.
+              </li>
+              <li>
+                <strong className="text-champagne">Retención de Activos:</strong> Al cancelar, el cliente pierde el acceso al dominio y al alojamiento (hosting) provisto. Si el cliente desea conservar los archivos del sitio web y/o su configuración, se aplicará una tarifa única de exportación.
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-lacquer-raised rounded-lg border border-gold-hairline p-8 mb-8">
+            <h3 className="text-2xl font-bold text-kinpaku mb-4">
               📦 Tarifa de Exportación de Activos Digitales
             </h3>
-            <p className="text-gray-300 mb-4">
+            <p className="text-text-warm mb-4">
               Cubre el tiempo y la mano de obra para organizar, documentar y empaquetar todos los activos digitales para la transferencia.
             </p>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <ul className="list-disc list-inside text-text-warm space-y-2">
               <li>
-                <strong className="text-white">NIVEL BÁSICO:</strong> <span className="font-bold text-blue-400">$75.000 USD/CLP</span>
+                <strong className="text-champagne">NIVEL BÁSICO:</strong> <span className="font-bold text-kinpaku">$75.000 USD/CLP</span>
               </li>
               <li>
-                <strong className="text-white">NIVEL PRO:</strong> <span className="font-bold text-green-400">$150.000 USD/CLP</span>
+                <strong className="text-champagne">NIVEL PRO:</strong> <span className="font-bold text-verdigris">$150.000 USD/CLP</span>
               </li>
               <li>
-                <strong className="text-white">NIVEL PREMIUM:</strong> <span className="font-bold text-purple-400">$250.000 USD/CLP</span>
+                <strong className="text-champagne">NIVEL PREMIUM:</strong> <span className="font-bold text-kinpaku">$250.000 USD/CLP</span>
               </li>
               <li>
-                <strong className="text-white">VIP EXPERIENCE:</strong> <span className="font-bold text-yellow-400">$450.000 USD/CLP</span>
+                <strong className="text-champagne">VIP EXPERIENCE:</strong> <span className="font-bold text-kinpaku">$450.000 USD/CLP</span>
               </li>
             </ul>
           </div>

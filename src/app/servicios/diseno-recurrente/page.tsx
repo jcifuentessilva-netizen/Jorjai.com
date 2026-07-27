@@ -118,16 +118,16 @@ export default function DisenoRecurrente() {
   ]
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
-      <h1 className="text-5xl font-extrabold text-white mb-4 text-center">Asistente de Diseño Recurrente</h1>
-      <p className="text-lg text-gray-300 text-center mb-10 max-w-4xl mx-auto">
+    <div className="py-12 px-4 sm:px-6 lg:px-8 bg-lacquer text-champagne">
+      <h1 className="text-3xl md:text-5xl font-extrabold text-champagne mb-4 text-center font-display">Diseño Recurrente</h1>
+      <p className="text-lg text-text-warm text-center mb-10 max-w-4xl mx-auto">
         Delega la creación de contenido y diseño gráfico recurrente con un costo fijo mensual, liberando tu tiempo para enfocarte en el negocio.
       </p>
 
       <div className="max-w-6xl mx-auto">
         {/* Nivel 1 */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-blue-400 mb-6 text-center">Nivel 1: Kit de Inicio</h2>
+          <h2 className="text-3xl font-bold text-kinpaku mb-6 text-center font-display">Nivel 1: Kit de Inicio</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {nivel1Services.map((service, index) => (
               <ServiceCard key={index} {...service} />
@@ -137,7 +137,7 @@ export default function DisenoRecurrente() {
 
         {/* Nivel 2 */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-green-400 mb-6 text-center">Nivel 2: Pack Profesional</h2>
+          <h2 className="text-3xl font-bold text-verdigris mb-6 text-center font-display">Nivel 2: Pack Profesional</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {nivel2Services.map((service, index) => (
               <ServiceCard key={index} {...service} />
@@ -147,7 +147,7 @@ export default function DisenoRecurrente() {
 
         {/* Nivel 3 */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-purple-400 mb-6 text-center">Nivel 3: Estudio de Contenido VIP</h2>
+          <h2 className="text-3xl font-bold text-kinpaku mb-6 text-center font-display">Nivel 3: Estudio de Contenido VIP</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {nivel3Services.map((service, index) => (
               <ServiceCard key={index} {...service} />
@@ -157,15 +157,15 @@ export default function DisenoRecurrente() {
         
         {/* Servicios Puntuales Adicionales */}
         <section className="mt-16">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">Opciones de Servicios Puntuales Adicionales</h2>
+          <h2 className="text-3xl font-bold text-champagne mb-8 text-center font-display">Opciones de Servicios Puntuales Adicionales</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {serviciosPuntuales.map((service, index) => (
-                <div key={index} className="bg-gray-800 rounded-lg shadow-xl p-6 flex flex-col justify-between">
+                <div key={index} className="bg-lacquer-raised rounded-lg border border-gold-hairline p-6 flex flex-col justify-between">
                     <div>
-                        <h3 className="text-2xl font-bold text-yellow-400 mb-2">{service.title}</h3>
-                        <p className="text-gray-300 mb-4">{service.description}</p>
+                        <h3 className="text-2xl font-bold text-kinpaku mb-2">{service.title}</h3>
+                        <p className="text-text-warm mb-4">{service.description}</p>
                     </div>
-                    <p className="text-3xl font-extrabold text-yellow-400 mt-4">{service.price}</p>
+                    <p className="text-3xl font-extrabold text-kinpaku mt-4">{service.price}</p>
                 </div>
             ))}
           </div>

@@ -56,16 +56,16 @@ export default function UtilidadesDigitales() {
   ];
 
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
-      <h1 className="text-5xl font-extrabold text-white mb-4 text-center">Utilidad Digital y Pruebas Sociales</h1>
-      <p className="text-lg text-gray-300 text-center mb-10 max-w-4xl mx-auto">
+    <div className="py-12 px-4 sm:px-6 lg:px-8 bg-lacquer text-champagne">
+      <h1 className="text-3xl md:text-5xl font-extrabold text-champagne mb-4 text-center font-display">Utilidad Digital y Pruebas Sociales</h1>
+      <p className="text-lg text-text-warm text-center mb-10 max-w-4xl mx-auto">
         Instala herramientas esenciales para capturar datos, automatizar la comunicación inicial y construir confianza en tu negocio.
       </p>
 
       <div className="max-w-6xl mx-auto">
         {/* Nivel 1 */}
         <section id="nivel-1" className="mb-16">
-          <h2 className="text-3xl font-bold text-blue-400 mb-2 text-center">
+          <h2 className="text-3xl font-bold text-kinpaku mb-2 text-center font-display">
             Nivel 1: Activación Básica (La Base del Contacto)
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
@@ -77,7 +77,7 @@ export default function UtilidadesDigitales() {
 
         {/* Nivel 2 */}
         <section id="nivel-2" className="mb-16">
-          <h2 className="text-3xl font-bold text-green-400 mb-2 text-center">
+          <h2 className="text-3xl font-bold text-verdigris mb-2 text-center font-display">
             Nivel 2: Herramientas de Confianza (Prueba Social y Datos)
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
@@ -89,7 +89,7 @@ export default function UtilidadesDigitales() {
 
         {/* Nivel 3 */}
         <section id="nivel-3" className="mb-16">
-          <h2 className="text-3xl font-bold text-purple-400 mb-2 text-center">
+          <h2 className="text-3xl font-bold text-kinpaku mb-2 text-center font-display">
             Nivel 3: Comunicación y Automatización (Ahorro de Tiempo)
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">

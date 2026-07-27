@@ -2,66 +2,89 @@
 
 export default function SobreMi() {
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl font-extrabold text-white mb-6 text-center">Sobre Mí</h1>
-      <div className="max-w-3xl mx-auto bg-gray-800 rounded-lg shadow-xl p-8 mb-8">
-        <p className="text-lg text-gray-300 leading-relaxed mb-6">
-          Soy Jordan Isaac, y mi misión es impulsar tu negocio en el mundo digital. Desde 2018, he estado inmerso en la creación de publicidad para redes sociales y desarrollando proyectos web profesionales. Acompaño a emprendedores y empresas establecidas en la creación de su identidad y contenido digital.
-        </p>
-        <p className="text-lg text-gray-300 leading-relaxed mb-6">
-          Mi trabajo se define por tres pilares fundamentales: <strong className="text-blue-400">Constancia, Medición y Mejora Continua.</strong>
-        </p>
-        <ul className="list-disc list-inside text-lg text-gray-300 space-y-3 mb-6">
-          <li>
-            <strong className="text-blue-400">Constancia:</strong> Porque el éxito digital no es un sprint, sino una maratón. Aseguro una presencia online sólida y activa.
-          </li>
-          <li>
-            <strong className="text-blue-400">Medición:</strong> Porque lo que no se mide, no se puede mejorar. Te ofrezco datos claros para tomar decisiones estratégicas.
-          </li>
-          <li>
-            <strong className="text-blue-400">Mejora Continua:</strong> Porque el entorno digital evoluciona constantemente. Adapto y optimizo tus estrategias para resultados crecientes.
-          </li>
-        </ul>
-        <p className="text-lg text-gray-300 leading-relaxed">
-          Esta filosofía me permite garantizar a mis clientes una evolución constante y resultados tangibles, diferenciándome por un enfoque estratégico y dinámico que realmente funciona.
-        </p>
-      </div>
+    <div className="py-12 px-4 bg-lacquer">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-champagne mb-8 text-center font-display">Sobre Mí</h1>
 
-      <div className="max-w-3xl mx-auto bg-gray-800 rounded-lg shadow-xl p-8">
-        <h2 className="text-3xl font-bold text-white mb-6 text-center">Mis Habilidades</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <h3 className="text-2xl font-semibold text-blue-400 mb-3">Diseño y Creatividad</h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>Logotipos e Identidad Visual</li>
-              <li>Diseño de Flyers y Gráficos Estáticos</li>
-              <li>Creación y Edición de Video (incluyendo con IA)</li>
-              <li>Saludos y Contenido con IA</li>
-              <li>Creación de Contenido Digital</li>
-            </ul>
+        <div className="bg-lacquer-raised rounded-lg p-8 mb-8 border border-gold-hairline">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+            <div className="w-24 h-24 rounded-full bg-kinpaku/20 border border-kinpaku/40 flex items-center justify-center text-3xl font-bold text-kinpaku shrink-0">
+              J
+            </div>
+            <div className="space-y-4">
+              <p className="text-lg text-text-warm leading-relaxed">
+                Soy <strong className="text-champagne">Jordan</strong>, tengo 24 años y vivo en Santiago de Chile. 
+                Desde niño me gustó programar — mi primer sitio web lo hice para ayudar a mi mamá con su negocio, 
+                y desde entonces supe que esto era lo mío.
+              </p>
+              <p className="text-lg text-text-warm leading-relaxed">
+                Antes de los 18 ya estaba trabajando desde mi casa para clientes en <strong className="text-champagne">Italia, 
+                Estados Unidos, Noruega, Perú y Argentina</strong>. Autodidacta por naturaleza, he complementado 
+                mi formación con cursos de neurociencia en Biia Lab, neuromarketing con Jürgen Clarick, 
+                ventas con Alex Day y Brian Tracy, SEO con Romuald Fonts, y actualmente estoy cursando 
+                programación en Harvard y Stanford.
+              </p>
+              <p className="text-lg text-text-warm leading-relaxed">
+                También tengo vasta experiencia en herramientas open-source y automatización de procesos 
+                — desde integraciones con n8n, Docker y CI/CD, hasta workflows complejos que eliminan 
+                tareas manuales y optimizan operaciones completas.
+              </p>
+              <p className="text-lg text-text-warm leading-relaxed">
+                Mi misión es <strong className="text-kinpaku">digitalizar negocios</strong> y abarcar a la gran minoría 
+                — esos emprendedores y PYMEs que merecen las mismas herramientas que las grandes empresas. 
+                Por eso creé <strong className="text-champagne">Jordan Digitalizaciones</strong> y tengo como meta 
+                a largo plazo mi propio <strong className="text-kinpaku">marketplace (SAM)</strong>.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3 className="text-2xl font-semibold text-green-400 mb-3">Desarrollo y Tecnología</h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>Diseño y Desarrollo de Páginas Web</li>
-              <li>Implementación de Chatbots</li>
-              <li>Nociones de SaaS (Software as a Service)</li>
-              <li>Automatización de Procesos Digitales</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-2xl font-semibold text-purple-400 mb-3">Marketing y Estrategia</h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>Estrategias de Publicidad Digital (Premium y Básicas)</li>
-              <li>Gestión de Redes Sociales</li>
-              <li>Asesoramiento en Marketing</li>
-              <li>Optimización SEO</li>
-              <li>Estrategia Integral de Marca</li>
-            </ul>
+        </div>
+
+        <div className="border border-gold-hairline rounded-lg p-8">
+          <h2 className="text-2xl font-bold text-champagne mb-8 text-center font-display">Áreas de Conocimiento</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="border-l-2 border-kinpaku/60 pl-4">
+              <h3 className="font-semibold text-champagne mb-3 text-lg font-display">Desarrollo Web</h3>
+              <ul className="space-y-2 text-sm text-text-muted">
+                <li>Landing Pages y Sitios Web</li>
+                <li>E-Commerce y Plataformas</li>
+                <li>APIs y Backend</li>
+                <li>Bases de Datos</li>
+                <li>SEO y WPO</li>
+              </ul>
+            </div>
+            <div className="border-l-2 border-verdigris/60 pl-4">
+              <h3 className="font-semibold text-champagne mb-3 text-lg font-display">Automatización</h3>
+              <ul className="space-y-2 text-sm text-text-muted">
+                <li>Workflows con n8n y Make</li>
+                <li>Docker y Contenedores</li>
+                <li>CI/CD y Despliegue</li>
+                <li>Chatbots y CRM</li>
+                <li>Herramientas Open-Source</li>
+              </ul>
+            </div>
+            <div className="border-l-2 border-kinpaku/60 pl-4">
+              <h3 className="font-semibold text-champagne mb-3 text-lg font-display">Marketing Digital</h3>
+              <ul className="space-y-2 text-sm text-text-muted">
+                <li>Publicidad Digital (Meta/Google)</li>
+                <li>Gestión de Redes Sociales</li>
+                <li>Neuromarketing</li>
+                <li>Estrategia de Marca</li>
+                <li>Email Marketing</li>
+              </ul>
+            </div>
+            <div className="border-l-2 border-verdigris/60 pl-4">
+              <h3 className="font-semibold text-champagne mb-3 text-lg font-display">Diseño y Creatividad</h3>
+              <ul className="space-y-2 text-sm text-text-muted">
+                <li>Identidad Visual y Branding</li>
+                <li>Diseño UX/UI</li>
+                <li>Edición de Video con IA</li>
+                <li>Creación de Contenido</li>
+                <li>Experiencias Web Inmersivas</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
-

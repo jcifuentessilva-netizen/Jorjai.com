@@ -27,30 +27,36 @@ export default function Home() {
 
   const featuredProjects = [
     {
-      title: "Jorjai Digitalizaciones (Plataforma Propia)",
-      description: "Ecosistema digital completo para ayudar a emprendedores y PYMEs a digitalizarse y vender en internet.",
-      services: ["Desarrollo de Plataformas", "E-commerce", "Branding"],
-      imageUrl: "https://via.placeholder.com/400x250?text=Super+Alpha+Market",
-      projectLink: "/proyectos",
+      title: "SAM Conecta — Red de Rescate de Alimentos",
+      description: "Plataforma comunitaria para conectar vecinos y rescatar alimentos con Next.js 16, Supabase y pagos integrados.",
+      services: ["Next.js 16", "Supabase", "Pagos", "Mapas"],
+      imageUrl: "",
+      projectLink: "https://sam-conecta-web.vercel.app",
     },
     {
-      title: "Colaborador en Agencia Merlin MKT",
-      description: "Apliqué un enfoque integral, contribuyendo desde el desarrollo web y campañas publicitarias, hasta la creación de flyers y la mejora de procesos.",
-      services: ["Desarrollo Web", "Publicidad Digital", "Diseño Gráfico"],
-      imageUrl: "https://via.placeholder.com/400x250?text=Merlin+MKT",
-      projectLink: "/proyectos",
+      title: "Snap2Code — Screenshot a Código con IA",
+      description: "App que convierte capturas en código funcional usando la API de Gemini.",
+      services: ["React + Vite", "Gemini API", "IA Generativa"],
+      imageUrl: "",
+      projectLink: "https://snap2code-screenshot-generate.vercel.app",
+    },
+    {
+      title: "Super Alpha Market",
+      description: "Plataforma para digitalizar PYMEs desde cero hasta marketplace propio.",
+      services: ["Desarrollo", "E-commerce", "Branding"],
+      imageUrl: "",
+      projectLink: "",
     },
   ];
 
   return (
-    <main className="flex flex-col items-center justify-center text-center px-4 bg-gray-900 text-white">
+    <main className="flex flex-col items-center justify-center text-center px-4 bg-lacquer text-champagne">
       <HeroSection />
 
-      <hr className="border-gray-700 w-full max-w-6xl" />
+      <hr className="border-gold-hairline w-full max-w-6xl" />
 
-      {/* Featured Services Section */}
       <section className="py-20 w-full max-w-6xl">
-        <h2 className="text-4xl font-extrabold text-white mb-12">Servicios Destacados</h2>
+        <h2 className="text-4xl font-extrabold text-champagne mb-12 font-display">Servicios Destacados</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {featuredServices.map((service, index) => (
             <ServiceCategoryCard key={index} {...service} />
@@ -58,18 +64,17 @@ export default function Home() {
         </div>
       </section>
       
-      <hr className="border-gray-700 w-full max-w-6xl" />
+      <hr className="border-gold-hairline w-full max-w-6xl" />
 
-      {/* Featured Projects Section */}
       <section className="py-20 w-full max-w-6xl">
-        <h2 className="text-4xl font-extrabold text-white mb-12">Proyectos Destacados</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <h2 className="text-4xl font-extrabold text-champagne mb-12 font-display">Proyectos Destacados</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredProjects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
         <div className="mt-12">
-            <Link href="/proyectos" className="text-blue-400 hover:text-blue-300 text-lg font-semibold">
+            <Link href="/proyectos" className="text-kinpaku hover:text-kinpaku-pale text-lg font-semibold">
                 Ver todos los proyectos &rarr;
             </Link>
         </div>
