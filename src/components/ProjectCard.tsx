@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   title: string;
@@ -10,6 +11,14 @@ interface ProjectCardProps {
   projectLink?: string;
 }
 
+const GradientPlaceholder: React.FC<{ label: string }> = ({ label }) => (
+  <div className="w-full h-48 bg-gradient-to-br from-kinpaku/20 via-verdigris/10 to-lacquer-raised flex items-center justify-center">
+    <div className="w-16 h-16 rounded-full bg-kinpaku/20 border border-kinpaku/40 flex items-center justify-center text-2xl font-bold text-kinpaku">
+      {label.charAt(0)}
+    </div>
+  </div>
+);
+
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
@@ -17,20 +26,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   imageUrl,
   projectLink,
 }) => {
-  const Gradient = () => (
-    <div className="w-full h-48 bg-gradient-to-br from-kinpaku/20 via-verdigris/10 to-lacquer-raised flex items-center justify-center">
-      <div className="w-16 h-16 rounded-full bg-kinpaku/20 border border-kinpaku/40 flex items-center justify-center text-2xl font-bold text-kinpaku">
-        {title.charAt(0)}
-      </div>
-    </div>
-  );
-
   return (
     <div className="bg-lacquer-raised rounded-lg overflow-hidden border border-gold-hairline hover:border-kinpaku/40 transition-all duration-300">
       {imageUrl ? (
-        <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+        <Image src={imageUrl} alt={title} width={800} height={480} className="w-full h-48 object-cover" />
       ) : (
-        <Gradient />
+        <GradientPlaceholder label={title} />
       )}
       <div className="p-6">
         <h3 className="text-xl font-bold text-white mb-2">{title}</h3>

@@ -61,7 +61,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           )}
 
           {/* MOBILE DRAWER */}
-          <div className={`fixed top-0 right-0 h-dvh w-72 bg-lacquer-raised z-50 md:hidden transform transition-transform duration-300 ${menuOpen ? 'translate-x-0' : 'translate-x-full'} flex flex-col pt-20 pb-6 px-6 overflow-y-auto`}>
+          <div
+            aria-hidden={!menuOpen}
+            className={`fixed top-0 right-0 h-dvh w-72 bg-lacquer-raised z-50 md:hidden transform transition-transform duration-300 ${menuOpen ? 'translate-x-0' : 'translate-x-full'} flex flex-col pt-20 pb-6 px-6 overflow-y-auto`}
+          >
             <ul className="flex flex-col gap-1">
               {links.map(({ href, label }) => (
                 <li key={href}>
@@ -99,7 +102,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <p className="text-sm text-text-muted">
             &copy; {new Date().getFullYear()} Jordan Digitalizaciones. Todos los derechos reservados.
           </p>
-          <a href="https://wa.me/56930973700" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-kinpaku transition-colors">
+          <a href="https://wa.me/56930973700" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" className="text-text-muted hover:text-kinpaku transition-colors">
             <FaWhatsapp size={20} />
           </a>
         </div>

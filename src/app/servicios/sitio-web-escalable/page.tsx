@@ -267,7 +267,7 @@ export default function SitioWebEscalable() {
           <div className="bg-lacquer-raised rounded-lg border border-gold-hairline p-8">
             <h3 className="text-2xl font-bold text-champagne mb-4">🚨 Término Clave de la Salida</h3>
             <p className="text-text-warm italic">
-              "Debido a la complejidad y la gestión de bases de datos de un Sitio Web Escalable, la Tarifa de Exportación varía según el nivel. Esta tarifa es obligatoria si el cliente desea llevarse sus activos digitales y la propiedad del código/configuración técnica al cancelar su suscripción (Mensual o Anual)."
+              &ldquo;Debido a la complejidad y la gestión de bases de datos de un Sitio Web Escalable, la Tarifa de Exportación varía según el nivel. Esta tarifa es obligatoria si el cliente desea llevarse sus activos digitales y la propiedad del código/configuración técnica al cancelar su suscripción (Mensual o Anual).&rdquo;
             </p>
           </div>
         </section>

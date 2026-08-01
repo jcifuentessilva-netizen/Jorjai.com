@@ -221,7 +221,7 @@ export default function ServiciosPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                 <div className="bg-lacquer-raised rounded-lg p-4 border border-kinpaku/30">
                   <h4 className="font-bold text-kinpaku mb-2">Levantarlo tú mismo (Licencias Cloud)</h4>
-                  <p className="text-2xl font-bold">$330 - $370 USD<span className="text-sm font-normal">/mes</span></p>
+                  <p className="text-2xl font-bold">$385 USD<span className="text-sm font-normal">/mes</span></p>
                   <p className="text-sm text-text-muted mt-2">Pagas licencias comerciales a cada proveedor SaaS, sin contar mano de obra ni mantenimiento.</p>
                 </div>
                 <div className="bg-lacquer-raised rounded-lg p-4 border border-verdigris/30">
